@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "nunito" : ['Nunito Sans', 'sans-serif']
+        "work-sans" : ['Work-Sans', 'sans-serif']
       }
     },
     colors : {
@@ -17,7 +17,7 @@ export default {
       shade2 : "#121212",
       shade3 : "#3B3B3B",
       shade4 : "#B3B3B3",
-      shade5 : "#F5F5F5",
+      shade5 : "#FFFFFF",
       test : "#F5ee32",
     }
   },

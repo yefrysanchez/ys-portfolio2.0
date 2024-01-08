@@ -20,9 +20,9 @@ const Navbar = () => {
           onClick={toggleMenu}
           className="h-10 w-24 py-2 flex flex-col justify-between cursor-pointer"
         >
-          <div className="bg-shade1 h-[3px] w-full rounded-full"></div>
-          <div className="bg-shade1 h-[3px] w-full rounded-full"></div>
-          <div className="bg-shade1 h-[3px] w-full rounded-full"></div>
+          <div className="bg-shade1 h-[1px] w-full rounded-full"></div>
+          <div className="bg-shade1 h-[1px] w-full rounded-full"></div>
+          <div className="bg-shade1 h-[1px] w-full rounded-full"></div>
         </div>
       </nav>
       <AnimatePresence>

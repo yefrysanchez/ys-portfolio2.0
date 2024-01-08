@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="font-nunito min-h-screen bg-shade5 ">
+    <div className="font-work-sans min-h-screen bg-shade5 ">
       <Navbar />
       <Home />
     </div>
