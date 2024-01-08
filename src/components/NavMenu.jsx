@@ -66,7 +66,7 @@ const NavMenu = ({ toggleMenu }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="fixed left-0 top-0 w-full origin-top h-screen bg-accent1  p-4"
+        className="fixed left-0 top-0 w-full origin-top h-screen bg-accent1  p-4 z-50"
       >
         <div className="flex h-full flex-col max-w-7xl mx-auto">
           <div className="flex justify-between  overflow-hidden">
