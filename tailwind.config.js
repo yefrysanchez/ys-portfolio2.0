@@ -16,7 +16,7 @@ export default {
       shade1 : "#0A0A0A",
       shade2 : "#121212",
       shade3 : "#3B3B3B",
-      shade4 : "#B3B3B3",
+      shade4 : "#f2f4f7",
       shade5 : "#FFFFFF",
       test : "#F5ee32",
     }

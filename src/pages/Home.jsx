@@ -1,3 +1,5 @@
+import About from "../components/About";
+import Contact from "../components/Contact";
 import Gridhome from "../components/Gridhome";
 import HeaderTitle from "../components/HeaderTitle";
 import Projects from "../components/Projects";
@@ -8,6 +10,8 @@ const Home = () => {
      <HeaderTitle />
      <Gridhome />
      <Projects />
+     <About />
+     <Contact />
     </div>
   );
 };
