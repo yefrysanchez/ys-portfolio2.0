@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className="bg-shade2 rounded-3xl h-80 text-center mb-12 text-shade4 flex justify-center items-center">
+    <div className="bg-shade2 rounded-3xl h-96 text-center mb-12 text-shade4 flex justify-center items-center">
       <div>
-        <h2 className="text-5xl font-bold mb-8">Let's Talk!</h2>
+        <h2 className="text-5xl lg:text-[86px] font-bold mb-8">Let's Talk!</h2>
         <p className="opacity-65 max-w-[400px] mb-6">
           Feel free to reach out. I'm here to help turn your ideas into amazing
           digital realities. Looking forward to hearing from you soon!
