@@ -6,12 +6,14 @@ import Projects from "../components/Projects";
 
 const Home = () => {
   return (
-    <div className="px-4 mt-32 max-w-7xl mx-auto">
-     <HeaderTitle />
-     <Gridhome />
-     <Projects />
-     <About />
-     <Contact />
+    <div className="px-4 mt-32 h-full max-w-7xl mx-auto">
+      <div className="min-h-[80vh]">
+        <HeaderTitle />
+        <Gridhome />
+      </div>
+      <Projects />
+      <About />
+      <Contact />
     </div>
   );
 };
