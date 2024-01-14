@@ -66,9 +66,9 @@ const NavMenu = ({ toggleMenu }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="fixed left-0 top-0 w-full origin-top h-screen bg-shade5 p-4 z-50 border-b-8"
+        className="fixed left-0 top-0 w-full origin-top h-screen bg-shade5 p-4 z-50 border-b-8 overflow-scroll"
       >
-        <div className="flex h-screen flex-col max-w-7xl mx-auto">
+        <div className="h-screen max-w-7xl mx-auto">
           <div className="flex justify-between  overflow-hidden h-24">
             <motion.div
               variants={NavLinks}
