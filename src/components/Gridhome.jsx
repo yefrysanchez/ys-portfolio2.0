@@ -1,7 +1,7 @@
 const Gridhome = () => {
   return (
-    <div className="mt-12 border min-h-[600px] grid gap-4 md:gap-8 grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
-      <div className="w-full h-full rounded-xl md:rounded-3xl overflow-hidden row-span-2">
+    <div className="mt-12 min-h-[600px] grid gap-3 lg:gap-8 grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
+      <div className="w-full h-full rounded-xl md:rounded-3xl overflow-hidden col-span-2">
         <video
           autoPlay
           loop

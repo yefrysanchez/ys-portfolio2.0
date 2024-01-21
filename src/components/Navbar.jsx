@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header className="h-20 border-b border-shade4 w-full fixed top-0 left-0 bg-shade5 z-40">
       <nav className="px-4 h-full flex items-center justify-between max-w-7xl mx-auto">
-        <div className="h-full p-2">
+        <div className="h-full py-2">
           <img className="h-full" src={logo} alt="Logo" />
         </div>
         <div
