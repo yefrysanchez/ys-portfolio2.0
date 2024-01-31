@@ -1,7 +1,7 @@
 const ProjectTitle = () => {
   return (
     <div>
-      <div className="flex gap-1 group pt-10 mb-8 ">
+      <div className="flex gap-1 group mt-24 mb-8 w-fit h-fit ">
         <svg
           className="group-hover:scale-110 transition duration-300 "
           xmlns="http://www.w3.org/2000/svg"
