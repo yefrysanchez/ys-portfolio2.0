@@ -3,10 +3,10 @@ import ProjectTitle from "../components/ProjectTitle";
 
 const ProjectPage = () => {
   return (
-    <div className="px-4 mt-20 h-full max-w-7xl mx-auto">
+    <div className="px-4 mt-20 h-full">
       <ProjectTitle />
       <div className="mt-8">
-        <div className="bg-accent2 h-[350px] md:h-[600px] lg:md:h-[750px]  rounded-3xl relative">
+        <div className="bg-accent2 h-[350px] md:h-[600px] lg:h-[750px]  rounded-3xl relative">
           <a className="hover:opacity-75 transition" href=""><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
