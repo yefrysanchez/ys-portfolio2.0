@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import BlogsListPage from "./pages/BlogsListPage";
+import Home from "./pages/Home";
 
 
 
@@ -8,9 +8,9 @@ import BlogsListPage from "./pages/BlogsListPage";
 
 function App() {
   return (
-    <div className="font-work-sans min-h-screen bg-shade5 px-4 max-w-7xl mx-auto">
+    <div className="font-work-sans min-h-screen bg-shade1 px-4 max-w-7xl mx-auto">
       <Navbar />
-      <BlogsListPage />
+      <Home />
     </div>
   );
 }

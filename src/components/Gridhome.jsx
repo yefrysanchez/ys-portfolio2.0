@@ -1,48 +1,28 @@
+import image1 from "../assets/images/image1.avif";
+import image2 from "../assets/images/image2.avif";
+import image3 from "../assets/images/image3.avif";
+import image4 from "../assets/images/image4.avif";
+
 const Gridhome = () => {
   return (
-    <div className="mt-12 min-h-[600px] grid gap-3 lg:gap-8 grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
-      <div className="w-full h-full rounded-xl md:rounded-3xl overflow-hidden col-span-2">
-        <video
-          autoPlay
-          loop
-          className="h-full w-full object-cover"
-          src="https://framerusercontent.com/assets/a7oLlvkswlykX0srOqFY3gx1s.mp4"
-        ></video>
+    <div className="mt-12 h-[350px] md:h-[550px] lg:h-[650px] grid gap-2 grid-cols-5 grid-rows-4">
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-5">
+        <img className="h-full w-full object-cover" src={image1} alt="img" />
       </div>
-      <div className="rounded-xl md:rounded-3xl overflow-hidden">
-        <img
-          className="h-full w-full object-cover"
-          src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/22/523974/4c7f9046b7d443e0f531758996df37cc.jpg"
-          alt="img"
-        />
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-3 md:col-span-1">
+        <img className="h-full w-full object-cover" src={image2} alt="img" />
       </div>
-      <div className="rounded-xl md:rounded-3xl overflow-hidden">
-        <img
-          className="h-full w-full object-cover"
-          src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/22/523974/4c7f9046b7d443e0f531758996df37cc.jpg"
-          alt="img"
-        />
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-2 md:col-span-4">
+        <img className="h-full w-full object-cover" src={image3} alt="img" />
       </div>
-      <div className="rounded-xl md:rounded-3xl overflow-hidden">
-        <img
-          className="h-full w-full object-cover"
-          src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/22/523974/4c7f9046b7d443e0f531758996df37cc.jpg"
-          alt="img"
-        />
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-5">
+        <img className="h-full w-full object-cover" src={image4} alt="img" />
       </div>
-      <div className="rounded-xl md:rounded-3xl overflow-hidden">
-        <img
-          className="h-full w-full object-cover"
-          src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/22/523974/4c7f9046b7d443e0f531758996df37cc.jpg"
-          alt="img"
-        />
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-2">
+        <img className="h-full w-full object-cover" src={image3} alt="img" />
       </div>
-      <div className="rounded-xl md:rounded-3xl overflow-hidden row-span-2 row-start-3 col-start-2 md:row-start-1 md:col-start-3">
-        <img
-          className="h-full w-full object-cover"
-          src="https://www.wallpaperup.com/uploads/wallpapers/2014/11/22/523974/4c7f9046b7d443e0f531758996df37cc.jpg"
-          alt="img"
-        />
+      <div className="rounded-xl md:rounded-3xl overflow-hidden col-span-3">
+        <img className="h-full w-full object-cover" src={image2} alt="img" />
       </div>
     </div>
   );
