@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 
 
 const BackBtn = ({title, link}) => {
   return (
-    <div className="flex gap-1 group mt-32 mb-8 w-fit h-fit ">
+    <div className="flex text-shade5 gap-1 group mt-32 mb-8 w-fit h-fit ">
         <svg
           className="group-hover:scale-110 transition duration-300 "
           xmlns="http://www.w3.org/2000/svg"
@@ -18,12 +19,12 @@ const BackBtn = ({title, link}) => {
           <path d="m12 19-7-7 7-7" />
           <path d="M19 12H5" />
         </svg>
-        <a
+        <Link
           className="font-bold tracking-wide group-hover:translate-x-1 transition duration-300 cursor-pointer"
-          href={link}
+          to={"/"}
         >
           {title}
-        </a>
+        </Link>
       </div>
   )
 }

@@ -38,7 +38,6 @@ const Modal = ({ modal, projects }) => {
       const { clientX, clientY } = e;
       movecontainerX(clientX);
       movecontainerY(clientY);
-      console.log(clientX, clientY);
     });
   }, []);
 

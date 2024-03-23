@@ -2,31 +2,11 @@
 
 import { useState } from "react";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
+import { ProjectsData } from "../data/Projects";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Project C1",
-      src: "image1.avif",
-      color: "#000000",
-    },
-    {
-      title: "Project C2",
-      src: "image2.avif",
-      color: "#8C8C8C",
-    },
-    {
-      title: "Project C3",
-      src: "image3.avif",
-      color: "#EFE803",
-    },
-    {
-      title: "Project C4",
-      src: "image4.avif",
-      color: "#706D63",
-    },
-  ];
-
+  
   const [modal, setmodal] = useState({ active: false, index: 0 });
 
   return (
@@ -35,8 +15,9 @@ const Projects = () => {
         <i className="fa-solid fa-code "></i> PROJECTS
       </h2>
       <ul className=" mb-20 text-shade4/90 relative">
-        {projects.map((project, i) => (
-          <a
+        {ProjectsData.map((project, i) => (
+          <Link
+          to={`/${project.title.replace(" ","")}`}
             onMouseEnter={() => setmodal({ active: true, index: i })}
             onMouseLeave={() => setmodal({ active: false, index: i })}
             key={i}
@@ -47,9 +28,9 @@ const Projects = () => {
               {project.title}
               <i className="fa-solid fa-arrow-up-right-from-square absolute top-8 right-8 group-hover:-translate-x-2 transition"></i>
             </li>
-          </a>
+          </Link>
         ))}
-       <Modal modal={modal} projects={projects} />
+       <Modal modal={modal} projects={ProjectsData} />
       </ul> 
     </div>
   );
