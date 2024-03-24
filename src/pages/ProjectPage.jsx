@@ -12,7 +12,7 @@ const ProjectPage = () => {
   );
   console.log(data.src);
   return (
-    <div className="px-4 mt-20 h-full">
+    <div id="Rrojects" className="px-4 mt-20 h-full">
       <ProjectTitle data={data} />
       <div className="mt-8">
         <div className="bg-accent2 h-[350px] md:h-[600px] lg:h-[750px]  rounded-3xl relative">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { motion } from "framer-motion";
 
@@ -6,8 +7,7 @@ const NavMenu = ({ toggleMenu }) => {
     { title: "Home", href: "#", num: "01" },
     { title: "Projects", href: "#", num: "02" },
     { title: "About", href: "#", num: "03" },
-    { title: "Blog", href: "#", num: "04" },
-    { title: "Contact", href: "#", num: "05" },
+    { title: "Contact", href: "#", num: "04" },
   ];
 
   const menuVariant = {
@@ -119,12 +119,12 @@ const NavMenu = ({ toggleMenu }) => {
                       className="mb-6 pb-2 border-x pl-2"
                       custom={i}
                     >
-                      <a href="#">
+                      <Link to={`#${link.title}`}>
                         <span className="font-extralight text-lg text-shade3 relative bottom-9">
                           {link.num}
                         </span>
                         {link.title}
-                      </a>
+                      </Link>
                     </motion.li>
                   </ul>
                 );
