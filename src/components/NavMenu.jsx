@@ -119,12 +119,12 @@ const NavMenu = ({ toggleMenu }) => {
                       className="mb-6 pb-2 border-x pl-2"
                       custom={i}
                     >
-                      <Link to={`#${link.title}`}>
+                      <a href={`#${link.title}`}>
                         <span className="font-extralight text-lg text-shade3 relative bottom-9">
                           {link.num}
                         </span>
                         {link.title}
-                      </Link>
+                      </a>
                     </motion.li>
                   </ul>
                 );

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { ProjectsData } from "../data/Projects";
 
 const Projects = () => {
-  
   const [modal, setmodal] = useState({ active: false, index: 0 });
 
   return (
@@ -17,21 +16,28 @@ const Projects = () => {
       <ul className=" mb-20 text-shade4/90 relative">
         {ProjectsData.map((project, i) => (
           <Link
-          to={`/${project.title.replace(" ","")}`}
+            to={`/${project.title.replace(" ", "")}`}
             onMouseEnter={() => setmodal({ active: true, index: i })}
             onMouseLeave={() => setmodal({ active: false, index: i })}
             key={i}
-            className="hover:text-shade5  transition group"
+            className="hover:text-shade5 transition group relative"
             href="#"
           >
-            <li className="border-b border-shade3 hover:border-shade5 py-16 font-bold text-4xl w-full relative transition-all group-hover:px-2">
-              {project.title}
+            <img
+              className="absolute inset-0 h-full w-full object-cover opacity-60 lg:hidden"
+              src={`../src/assets/images/${project.src}`}
+              alt="project image"
+            />
+            <li
+              className={`border-b border-shade3 hover:border-shade5 py-16 font-bold text-4xl w-full relative transition-all group-hover:px-2`}
+            >
+              <p className="z-10"> {project.title}</p>
               <i className="fa-solid fa-arrow-up-right-from-square absolute top-8 right-8 group-hover:-translate-x-2 transition"></i>
             </li>
           </Link>
         ))}
-       <Modal modal={modal} projects={ProjectsData} />
-      </ul> 
+        <Modal modal={modal} projects={ProjectsData} />
+      </ul>
     </div>
   );
 };

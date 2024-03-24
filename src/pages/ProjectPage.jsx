@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import Contact from "../components/Contact";
 import ProjectTitle from "../components/ProjectTitle";
 import { ProjectsData } from "../data/Projects";
-import img from "../assets/images/image1.avif";
 
 const ProjectPage = () => {
   const url = useParams();
